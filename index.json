@@ -1,0 +1,215 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "手绘风官方插件市场",
+    "en": "Handraw Official Plugin Market"
+  },
+  "description": {
+    "zh": "手绘风工作台与 DeepSeek Harness 通用插件市场源，收录官方插件与实测兼容的社区插件。",
+    "en": "Official plugin market index for Handraw Client and DeepSeek Harness (DSH Format 1)."
+  },
+  "metadata": {
+    "categories": {
+      "creation": {
+        "title": { "zh": "创作工作台", "en": "Creation Studio" }
+      },
+      "gallery": {
+        "title": { "zh": "扩展画廊", "en": "Galleries" }
+      },
+      "provider": {
+        "title": { "zh": "模型与号池", "en": "Model Providers" }
+      },
+      "media": {
+        "title": { "zh": "自媒体与效率", "en": "Media & Workflow" }
+      }
+    },
+    "labels": {
+      "official": {
+        "title": { "zh": "官方维护", "en": "Official" }
+      },
+      "handraw-verified": {
+        "title": { "zh": "手绘风实测兼容", "en": "Handraw Verified" }
+      },
+      "dsh-native": {
+        "title": { "zh": "DSH 生态插件", "en": "DSH Native" }
+      }
+    },
+    "sortKeys": {
+      "featured": {
+        "title": { "zh": "推荐排序", "en": "Featured" }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-pose-studio",
+      "title": {
+        "zh": "AI 写真与姿势工作台",
+        "en": "AI Pose Studio"
+      },
+      "description": {
+        "zh": "内置姿势、服装、人像、画风、主题色与版式图库，支持单图、图文套图与角色一致性创作。",
+        "en": "Portrait & pose studio with curated pose, outfit, face, style, color and layout galleries."
+      },
+      "icon": "./icons/pose-studio.svg",
+      "author": "yang0",
+      "homepage": "https://github.com/yang0/dsh-handraw-style",
+      "repository": {
+        "url": "https://github.com/yang0/dsh-handraw-style"
+      },
+      "metadata": {
+        "categories": ["creation", "gallery"],
+        "labels": ["official", "handraw-verified", "dsh-native"],
+        "sortKeys": { "featured": 100 }
+      },
+      "versions": [
+        {
+          "version": "0.7.9",
+          "publishTimestamp": 1794574474,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/yang0/dsh-handraw-style.git",
+            "commit": "4e959966464e0b3b7aa8fb39ef535946b5362ff1"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-plugin-handraw-style",
+      "title": {
+        "zh": "手绘风工作台 (DSH 插件版)",
+        "en": "Handraw Style Studio (DSH)"
+      },
+      "description": {
+        "zh": "手绘风官方 DSH 插件：受限参数选择、角色与场景双画风融合、独立浏览画廊与提示词直出。",
+        "en": "Official Handraw Style DSH plugin with dual-style fusion, curated visual gallery and direct generation."
+      },
+      "icon": "./icons/handraw-style.svg",
+      "author": "yang0",
+      "homepage": "https://handraw-style.com",
+      "repository": {
+        "url": "https://github.com/yang0/handraw-style",
+        "directory": "plugins/dsh-handraw-style"
+      },
+      "metadata": {
+        "categories": ["creation", "gallery"],
+        "labels": ["official", "handraw-verified", "dsh-native"],
+        "sortKeys": { "featured": 95 }
+      },
+      "versions": [
+        {
+          "version": "0.5.0",
+          "publishTimestamp": 1795314735,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/yang0/handraw-style.git",
+            "commit": "07c782835e52e16ce1c74db403db98d5c6fa7c4f",
+            "directory": "plugins/dsh-handraw-style"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-plugin-chatgpt2api",
+      "title": {
+        "zh": "ChatGPT2API 本地号池",
+        "en": "ChatGPT2API Native Pool"
+      },
+      "description": {
+        "zh": "跨平台无 Docker 的本地号池与 OpenAI 兼容生图/对话服务，支持可视化账号管理与独立 API Key。",
+        "en": "Cross-platform Docker-free local account pool and OpenAI-compatible image/chat API service."
+      },
+      "icon": "./icons/chatgpt2api.svg",
+      "author": "yang0",
+      "homepage": "https://github.com/yang0/chatgpt2api-dsh",
+      "repository": {
+        "url": "https://github.com/yang0/chatgpt2api-dsh"
+      },
+      "metadata": {
+        "categories": ["provider"],
+        "labels": ["official", "handraw-verified", "dsh-native"],
+        "sortKeys": { "featured": 90 }
+      },
+      "versions": [
+        {
+          "version": "0.6.3",
+          "publishTimestamp": 1794202947,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/yang0/chatgpt2api-dsh.git",
+            "commit": "8ad40e35cc4b759b056afbaa354bba62dd1ee18b"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-media-desk",
+      "title": {
+        "zh": "自媒体工作台",
+        "en": "Media Desk"
+      },
+      "description": {
+        "zh": "一句话记灵感，一键成稿：口播脚本、标题、视频封面、配图、黑白线稿分镜与发布排期。",
+        "en": "Capture ideas and turn them into scripts, covers, illustrations, storyboards and schedules."
+      },
+      "icon": "./icons/media-desk.svg",
+      "author": "woniuniuniu",
+      "homepage": "https://github.com/woniuniuniu/dsh-media-desk",
+      "repository": {
+        "url": "https://github.com/woniuniuniu/dsh-media-desk"
+      },
+      "metadata": {
+        "categories": ["media"],
+        "labels": ["handraw-verified", "dsh-native"],
+        "sortKeys": { "featured": 85 }
+      },
+      "versions": [
+        {
+          "version": "2.7.2",
+          "publishTimestamp": 1794000000,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-plugin-image-workbench",
+      "title": {
+        "zh": "Bluxe 生图工作台",
+        "en": "Bluxe Image Workbench"
+      },
+      "description": {
+        "zh": "侧栏图文与摄影生图工作台，支持内置本地账号池及任意 OpenAI 兼容生图接口与自定义保存目录。",
+        "en": "Sidebar image generation workbench supporting local account pools and OpenAI-compatible endpoints."
+      },
+      "icon": "./icons/image-workbench.svg",
+      "author": "guohwa",
+      "homepage": "https://github.com/guohwa/dsh-plugin-image-workbench",
+      "repository": {
+        "url": "https://github.com/guohwa/dsh-plugin-image-workbench"
+      },
+      "metadata": {
+        "categories": ["creation"],
+        "labels": ["handraw-verified", "dsh-native"],
+        "sortKeys": { "featured": 80 }
+      },
+      "versions": [
+        {
+          "version": "1.1.56",
+          "publishTimestamp": 1794800000,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    }
+  ]
+}
