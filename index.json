@@ -104,7 +104,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/yang0/handraw-style.git",
-            "commit": "07c782835e52e16ce1c74db403db98d5c6fa7c4f",
+            "commit": "ad836e7b17d59524fb980eeb231cbf3bfd826fc8",
             "directory": "plugins/dsh-handraw-style"
           },
           "engines": {}
