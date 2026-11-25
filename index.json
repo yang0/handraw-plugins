@@ -8,6 +8,10 @@
     "zh": "手绘风工作台与 DeepSeek Harness 通用插件市场源，收录官方插件与实测兼容的社区插件。",
     "en": "Official plugin market index for Handraw Client and DeepSeek Harness (DSH Format 1)."
   },
+  "mirrors": {
+    "gitee": "https://gitee.com/yang02010/handraw-plugins/raw/main/index.json",
+    "github": "https://raw.githubusercontent.com/yang0/handraw-plugins/main/index.json"
+  },
   "metadata": {
     "categories": {
       "creation": {

@@ -1,0 +1,29 @@
+name: Mirror to Gitee
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    if: ${{ github.repository == 'yang0/handraw-plugins' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push main branch to Gitee mirror (when GITEE_PRIVATE_KEY secret is set)
+        env:
+          GITEE_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+        run: |
+          if [ -z "$GITEE_PRIVATE_KEY" ]; then
+            echo "GITEE_PRIVATE_KEY secret not configured; skipping automatic Gitee mirror."
+            exit 0
+          fi
+          mkdir -p ~/.ssh
+          printf '%s\n' "$GITEE_PRIVATE_KEY" > ~/.ssh/id_gitee
+          chmod 600 ~/.ssh/id_gitee
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+          GIT_SSH_COMMAND='ssh -i ~/.ssh/id_gitee -o IdentitiesOnly=yes' \
+            git push --force git@gitee.com:yang02010/handraw-plugins.git HEAD:refs/heads/main
